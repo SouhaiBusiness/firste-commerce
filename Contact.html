@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
+<style type="text/css">
+   @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'spartan', sans-serif;
+}
+h2{
+    font-size: 46px;
+	line-height: 54px;
+	color: #222;
+}
+
+}
+h6{
+	font-weight: 700px;
+	font-size: 12px;
+}
+p{
+	font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;   
+}
+	body{
+	width: 100%;
+}
+/* Section 1*/
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #E3E6F3;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+	z-index: 999;
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+   content: '';
+   width: 30%;
+   height: 2px;
+   background: #088178;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+
+#mobile{
+   	display: none;
+   	align-items: center;
+   }
+#close{
+	display: none;
+}
+#header .logo{
+	text-decoration: none;
+	font-size: 1.5em;
+    color: #222;
+	filter: drop-shadow(0 0 5px #222) drop-shadow(0 0 10px #222);
+
+}
+
+/* Section 2*/
+
+
+
+/* Section 4*/
+
+/*Section*/
+#newsletter{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background: url();
+	background-repeat: no-repeat;
+	background-position: 20% 30%;
+	background: #041e42;
+}
+#newsletter h4{
+   font-size: 22px;
+   font-weight: 700;
+   color: #fff;
+}
+#newsletter p{
+   font-size: 14px;
+   font-weight: 600;
+   color: #818ea0;
+}
+#newsletter p span{
+   color: #ffbd27;
+}
+#newsletter .form{
+	display: flex;
+	width: 40%;
+}
+#newsletter input{
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0; 
+	border-bottom-right-radius: 0; 
+}
+#newsletter button{
+
+   background-color: #088178;
+   color: #fff;
+   white-space: nowrap;
+   border-radius: 4px;
+   border-top-left-radius: 0; 
+   border-bottom-left-radius: 0;
+}
+
+
+/*Footer*/
+
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+footer .logo{
+	text-decoration: none;
+	font-size: 1.5em;
+    color: #222;
+	filter: drop-shadow(0 0 5px #222) drop-shadow(0 0 10px #222);
+	margin-bottom: 40px;
+}
+footer h4{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+footer p{
+	font-size: 13px;
+	padding-bottom: 0 0 8px 0;
+}
+footer a{
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+}
+footer a:hover{
+	color: green;
+}
+footer .socialmedia{
+	margin-top: 20px;	
+}
+footer .socialmedia a{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .socialmedia a:hover{
+    color: red;
+}
+footer .install .row img{
+    border: 1px solid #088178;   
+    border-radius: 6px;
+}
+footer .install img{
+	margin: 10px 0 15px 0;
+	width: 100px;
+}
+footer .copyright{
+	width: 100%;
+	text-align: center;
+}
+
+#page-header{
+    background: url(bluebanner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top: 20px;
+}
+#page-header h2,
+#page-header p{
+   color: #fff;
+}
+
+
+/*Section*/
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details{
+   width: 40%;
+}
+#contact-details .details span{
+   font-size: 12px;
+}
+#contact-details .details h2,
+#form-details form h2{
+   font-size: 16px;
+   line-height: 35px;
+   padding: 20px 0;
+}
+#contact-details .details h3{
+   font-size: 16px;
+   padding: 15px;
+}
+#contact-details .details li{
+   list-style: none;
+   display: flex;
+   padding: 10px 0;
+}
+#contact-details .details li ion-icon{
+   font-size: 14px;
+   padding-right: 22px;
+}
+#contact-details .details li p{
+   font-size: 14px;
+   margin: 0;
+}
+#contact-details .map{
+     width: 55%;
+     height: 400px;
+}
+#contact-details .map iframe{
+     width: 100%;
+     height: 100%;
+}
+
+/*Section*/
+#form-details {
+   display: flex;
+   justify-content: space-between;
+   margin: 30px;
+   padding: 80px;
+   border-top: 1px solid #e1e1e1;
+}
+
+
+#form-details form{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+	width: 100%;
+	padding: 12px 15px;
+	outline: none;
+	margin-bottom: 20px;
+	border-radius: 1px solid #e1e1e1;
+}
+#form-details form button{
+   background-color: #088178;
+   color: #fff;
+   width: 100px;
+   height: 60px;
+}
+
+#form-details .people div{
+  padding-bottom: 25px;
+  display: flex;
+align-items: flex-start;
+}
+#form-details .people div img{
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-left: 100px;
+}
+#form-details .people div p{
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+#form-details .people div img{
+  display: block;
+  font-size: 16px;
+  font-size: 600;
+  color: #000;
+}
+
+/* media screen*/
+
+
+@media (max-width:799px) {
+   .section-p1{
+   	padding: 40px 40px;
+   }
+   #navbar{
+   	display: flex;
+   	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: fixed;
+	top: 0;
+	right: -300px;
+	height: 100vh;
+	width: 300px;
+	background-color: #E3E6F3;
+	box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+	padding: 80px 0 0 10px;
+	transition: 0.3s;
+   }
+   #navbar.active{
+   	  right: 0px;
+   }
+   #navbar li{
+   	 margin-bottom: 25px;
+   }
+   #menu{
+   	display: none;
+   }
+   
+
+   #mobile{
+   	display: flex;
+   	align-items: center;
+   }
+   #mobile i{
+   	color: #1a1a1a;
+   	font-size: 24px;
+   	padding-left: 20px;
+   }
+   #close{
+   	display: initial;
+   	position: absolute;
+   	top: 30px;
+   	left: 30px;
+   	color: #222;
+   	font-size: 24px;
+   }   
+   
+   
+   #newsletter .form{
+   	width: 70%;
+   }
+}
+
+#about-header{
+	display: flex;
+	align-items: center;
+}
+#about-header img{
+	width: 70%;
+	height: auto;
+}
+
+#about-header div{
+	padding-left: 40px;
+}
+
+@media (max-width: 477px){
+	.section-p1{
+   	padding: 20px;
+    }
+	#header{
+		padding: 10px 30px;
+	}
+	h1{
+		font-size: 38px;
+	}
+	h2{
+		font-size: 32px;
+	}
+	
+	#newsletter .form{
+   	width: 100%;
+   }
+   
+  
+
+   #contact-details{
+   	   flex-direction: column;
+   }
+   #contact-details .details{
+       width: 100%;
+       margin-bottom: 30px;
+   }
+   #contact-details .map{
+   	   width: 100%;
+   }
+   #form-details{
+   	   margin: 10px;
+   	   padding: 30px 10px;
+   	   flex-wrap: wrap;
+   }
+   #form-details form{
+   	   width: 100%;
+   	   margin-bottom: 30px; 
+   }
+
+}
+
+</style>
+<body>
+<section id="header">
+	<a href="#" class="logo">Shopee</a>
+	<div>
+		<ul id="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Shop.html">Shop</a></li>
+			<li><a href="Blog.html">Blog</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a class="active" href="Contact.html">Contact</a></li>
+			<li id="menu"><a href="Cart.html"><ion-icon name="card"></ion-icon></a></li>
+		    <a href="" id="close"><ion-icon name="close-outline"></ion-icon></a>
+		</ul>
+	</div>
+
+	<div id="mobile">
+		 <a href="" id="menu1"><ion-icon name="card"></ion-icon></a>
+		 <i id="bar" class="fas fa-outdent"></i>
+	</div>
+
+</section>
+
+
+
+<section id="page-header" class="about-header">
+  <h2>#Let's-Talk</h2>
+  <P>Leave A Massage. We will do our best to help you</P>	
+</section>
+
+</br>
+</br>
+<section id="contact-details" class="section-p1">
+	<div class="details">
+		<span>Get In Touch</span>
+		<h2>Visit one of our argency locations or contact us from here</h2>
+		<h3>Head Office</h3>
+		<div>
+			<li>
+				<ion-icon name="barcode"></ion-icon>
+				<p>S6 Glassford Street Glasgow G1 1Ul New York</p>
+			</li>
+			<li>
+				<ion-icon name="at-circle"></ion-icon>
+				<p>contact@example.com</p>
+			</li>
+			<li>
+				<ion-icon name="call-outline"></ion-icon>
+				<p>contact@example.com</p>
+			</li>
+			<li>
+				<ion-icon name="subway-outline"></ion-icon>
+				<p>Monday to saturday : 9.00am to 16pm</p>
+			</li>
+		</div>
+	</div>
+
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13246.195572352175!2d-5.5546202751854175!3d33.90127005031171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda044c2cbde666f%3A0x36db441cf31c4e68!2zSGFtcmlhLCBNZWtuw6hz!5e0!3m2!1sfr!2sma!4v1660498495547!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</section>
+
+</br>
+
+<section id="form-details">
+	<form>
+		<span>Leave A Message</span>
+		<h2>Shopee is at your service</h2>
+		<input type="text" placeholder="Your Name" name="">
+	    <input type="text" placeholder="Your E-mail" name="">
+	    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
+	    <button class="normal">Submit</button>
+	</form>
+
+	   	<div class="people">
+	   		<div>
+	   			<img src="boy1.jpg" alt="">
+	   			<p><span>Jack Daniel</span> Senior Marketing <br> Phone : 000 77 88 <br> Email : contact@example.com</p>
+	   		</div>
+	   		<div>
+	   			<img src="girl2.jpg" alt="">
+	   			<p><span>Amanda gourdo</span> manager and public speaker <br> Phone : 000 77 88 <br> Email : contact@example.com</p>
+	   		</div>
+	   		<div>
+	   			<img src="boy3.png" alt="">
+	   			<p><span>petter naz</span> company director and Mentor <br> Phone : 000 77 88 <br> Email : contact@example.com</p>
+	   		</div>
+	   	</div>
+</section>
+</br>
+<section id="newsletter" class="section-p1 section-m1">
+	<div class="newtext">
+		<h4>Sign Up For NewLetters</h4>
+		<p>Get E-Mail updates about our latest shop and <span>Special offers</span></p>
+	</div>
+	<div class="form">
+		<input type="text" placeholder="Your email adress"name="">
+		<button class="normal">Sign up</button>
+	</div>
+</section>
+
+<footer class="section-p1">
+	<div class="col">
+		<a href="#" class="logo">Shopee</a>
+		<h4>Contact</h4>
+		<p><strong>Adress:</strong> Saâada, Rue Zerktouni, Meknès</p>
+		<div class="socialmedia">
+			<h4>Follow Us</h4>
+			<div class="icons">
+<a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+<a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+<a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+<a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<h4>About</h4>
+		<a href="">About Us</a>
+		<a href="">Delivery Information</a>
+		<a href="">Privacy Policy</a>
+		<a href="">Terms and Conditions</a>
+		<a href="">Contact Us</a>
+	</div>
+	<div class="col">
+		<h4>My account</h4>
+		<a href="">Sign up</a>
+		<a href="">View Cart</a>
+		<a href="">My Wishlist</a>
+		<a href="">Track my Order</a>
+		<a href="">Help</a>
+	</div>
+	<div class="col install">
+		<h4>Instal Shoppe App</h4>
+		<p>From App Store or Google Play</p>
+	<div class="row">
+		<img src="app-store.png" alt="">
+		<img src="Google_Play_Store.jpg" alt="">
+	</div>
+	<p>From App Store or Google Play</p>
+	<img src="payment_2x.png" alt="">
+	</div>
+
+	<div class="copyright">
+		<p>“Copyright.” Shpeer.com, file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/E-Commerce%20Web%20Site.html. Accessed 8 Aug. 2022.</p>
+	</div>
+</footer>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+	const bar = document.getElementById('bar');
+	const close = document.getElementById('close');
+	const nav = document.getElementById('navbar');
+
+if (bar) {
+	bar.addEventListener('click', () => {
+       nav.classList.add('active');
+	})
+}
+if (close) {
+	close.addEventListener('click', () => {
+       nav.classList.remove('active');
+	})
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device, initial-scale=1.0">
+	<title>Payment Getway Page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'spartan', sans-serif;
+}
+
+h2{
+    font-size: 46px;
+	line-height: 54px;
+	color: #222;
+}
+
+}
+h6{
+	font-weight: 700px;
+	font-size: 12px;
+}
+p{
+	font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;   
+}
+
+
+body{
+	width: 100%;
+}
+/* Section 1*/
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #E3E6F3;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+	z-index: 999;
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover
+{
+  color: #088178;
+}
+
+#navbar li a:hover::after{
+   content: '';
+   width: 30%;
+   height: 2px;
+   background: #088178;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+
+#mobile{
+   	display: none;
+   	align-items: center;
+   }
+#close{
+	display: none;
+}
+
+
+#header .logo{
+	text-decoration: none;
+	font-size: 1.5em;
+    color: #222;
+	filter: drop-shadow(0 0 5px #222) drop-shadow(0 0 10px #222);
+
+}
+
+
+
+
+
+/* Section 5*/
+
+#banner{
+	position: relative;
+	top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    background: url(banner-background.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+	color: #fff;
+	font-size: 16px;
+}
+#banner h2{
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 0;
+}
+
+#banner h2 span{
+	color: #ef3636;
+	font-size: 30px;
+	padding: 10px 0;
+}
+button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 10px;
+	color: #000;
+	background: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	outline: none;
+	transition: 0.2s;
+}
+#banner button:hover{
+	background: #088178;
+	color: #fff;
+}
+
+/*--- Payment Gateway  -----*/
+
+
+#payment form{
+   padding: 20px;
+   width: 800px;
+   background: #fff;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   margin: 50px 300px;
+}
+#payment form .row{
+   display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#payment form .row .col{
+  flex: 1 1 250px;
+}
+#payment form .row .col .title{
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+#payment form .row .col .inputBox{
+  margin: 15px 0;
+}
+#payment form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+#payment form .row .col .inputBox input{
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+#payment form .row .col .inputBox input:focus{
+   border: 1px solid #000;
+}
+/*#payment form .row .col .flex{
+  /*display: flex;
+  gap: 15px;
+}*/
+#payment form .row .col .inputBox{
+  margin-top: 5px;
+}
+#payment form .row .col .inputBox img{
+  width: 250px;
+  height: 32px; 
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+#payment form .submit-btn{
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #088178;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#payment form .submit-btn:hover{
+   background: #27ae60;
+}
+
+/*Section*/
+
+
+#newsletter{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background: url();
+	background-repeat: no-repeat;
+	background-position: 20% 30%;
+	background: #041e42;
+}
+#newsletter h4{
+   font-size: 22px;
+   font-weight: 700;
+   color: #fff;
+}
+#newsletter p{
+   font-size: 14px;
+   font-weight: 600;
+   color: #818ea0;
+}
+#newsletter p span{
+   color: #ffbd27;
+}
+#newsletter .form{
+	display: flex;
+	width: 40%;
+}
+#newsletter input{
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0; 
+	border-bottom-right-radius: 0; 
+}
+#newsletter button{
+
+   background-color: #088178;
+   color: #fff;
+   white-space: nowrap;
+   border-radius: 4px;
+   border-top-left-radius: 0; 
+   border-bottom-left-radius: 0;
+}
+
+
+/*Footer*/
+
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+footer .logo{
+	text-decoration: none;
+	font-size: 1.5em;
+    color: #222;
+	filter: drop-shadow(0 0 5px #222) drop-shadow(0 0 10px #222);
+	margin-bottom: 40px;
+}
+footer h4{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+footer p{
+	font-size: 13px;
+	padding-bottom: 0 0 8px 0;
+}
+footer a{
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+}
+footer a:hover{
+	color: green;
+}
+footer .socialmedia{
+	margin-top: 20px;	
+}
+footer .socialmedia a{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .socialmedia a:hover{
+    color: red;
+}
+footer .install .row img{
+    border: 1px solid #088178;   
+    border-radius: 6px;
+}
+footer .install img{
+	margin: 10px 0 15px 0;
+	width: 100px;
+}
+footer .copyright{
+	width: 100%;
+	text-align: center;
+}
+
+
+
+/* Start media Query/ media screen*/
+
+@media (max-width:799px) {
+   .section-p1{
+   	padding: 40px 40px;
+   }
+   #navbar{
+   	display: flex;
+   	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: fixed;
+	top: 0;
+	right: -300px;
+	height: 100vh;
+	width: 300px;
+	background-color: #E3E6F3;
+	box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+	padding: 80px 0 0 10px;
+	transition: 0.3s;
+   }
+   #navbar.active{
+   	  right: 0px;
+   }
+   #navbar li{
+   	 margin-bottom: 25px;
+   }
+   #menu{
+   	display: none;
+   }
+   
+
+   #mobile{
+   	display: flex;
+   	align-items: center;
+   }
+   #mobile i{
+   	color: #1a1a1a;
+   	font-size: 24px;
+   	padding-left: 20px;
+   }
+   #close{
+   	display: initial;
+   	position: absolute;
+   	top: 30px;
+   	left: 30px;
+   	color: #222;
+   	font-size: 24px;
+   }
+  
+   
+   
+   #banner{
+   	height: 36vh;
+   }
+   #sm-banner .banner-box{
+   	min-width: 100%;
+   	height: 30vh; 	
+   }
+   #sm-banner .banner-box2{
+   	 margin-top: 20px;	
+   }
+  
+   #banner3{
+   	padding: 0 40px;
+   }
+   #banner3 .banner-box{
+   	width: 30%;
+   }
+   #newsletter .form{
+   	width: 70%;
+   }
+}
+@media (max-width: 477px){
+	.section-p1{
+   	padding: 20px;
+    }
+	#header{
+		padding: 10px 30px;
+	}
+	h1{
+		font-size: 38px;
+	}
+	h2{
+		font-size: 32px;
+	}
+	
+	#banner{
+		height: 40vh;
+	}
+	
+	#newsletter .form{
+   	width: 100%;
+   }
+}
+
+
+</style>
+
+</head>
+<body>
+<section id="header">
+	<a href="#" class="logo">Shopee</a>
+	<div>
+		<ul id="navbar">
+			<li><a href="file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/E-Commerce%20Web%20Site.html">Home</a></li>
+			<li><a href="file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/Shop.html">Shop</a></li>
+			<li><a href="file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/Blog.html">Blog</a></li>
+			<li><a href="file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/About.html">About</a></li>
+			<li><a href="file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/Contact.html">Contact</a></li>
+			<li id="menu"><a href="file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/Cart.html"><ion-icon name="card"></ion-icon></a></li>
+		    <a href="" id="close"><ion-icon name="close-outline"></ion-icon></a>
+		</ul>
+	</div>
+
+	<div id="mobile">
+		 <a href="" id="menu1"><ion-icon name="card"></ion-icon></a>
+		 <i id="bar" class="fas fa-outdent"></i>
+	</div>
+
+</section>
+
+</br>
+</br>
+
+<section id="payment">
+	<form action="">
+		<div class="row">
+
+			<div class="col">
+					<h3 class="title">billing adress</h3>
+
+					<div class="inputBox">
+						<span>Full Name</span>
+						<input type="text" placeholder="David stone">
+					</div>
+					<div class="inputBox">
+						<span>email :</span>
+						<input type="email" placeholder="example@example.com">
+					</div>
+					<div class="inputBox">
+						<span>Adress</span>
+						<input type="text" placeholder="romm - street - local">
+					</div>
+					<div class="inputBox">
+						<span>City</span>
+						<input type="text" placeholder="Meknès">
+					</div>
+					<div class="inputBox">
+						<span>State :</span>
+						<input type="text" placeholder="Morroco">
+					</div>
+					<div class="inputBox">
+						<span>Zip code :</span>
+						<input type="text" placeholder="123 521">
+					</div>
+            
+            </div>
+
+			<div class="col">
+					<h3 class="title">Payment</h3>
+
+					<div class="inputBox">
+						<span>cards accepted :</span>
+						<img src="25654-2-major-credit-card-logo-transparent.png">
+					</div>
+
+					<div class="inputBox">
+						<span>Name on cards</span>
+						<input type="text" placeholder="Mr. David stone">
+					</div>
+					
+					<div class="inputBox">
+						<span>exp month</span>
+						<input type="text" placeholder="Junary">
+					</div>
+					<div class="inputBox">
+						<span>Exp year</span>
+						<input type="number" placeholder="2023">
+					</div>
+					<div class="inputBox">
+						<span>State :</span>
+						<input type="text" placeholder="Morroco">
+					</div>
+					<div class="inputBox">
+						<span>CVV :</span>
+						<input type="text" placeholder="1231"> 
+					</div>
+
+			</div>
+
+		</div>
+
+		<input type="submit" value="proceed to checkout" class="submit-btn">
+
+	</form>
+</section>
+
+
+
+
+<section id="banner" class="section-m1">
+	<h4>Repair Services</h4>
+	<h2>Up to <span>70% OFF</span> - All t-shirts and Accessories</h2>
+	<button class="normal">Explore More</button>
+</section>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+</br>
+</br>
+
+
+
+<section id="newsletter" class="section-p1 section-m1">
+	<div class="newtext">
+		<h4>Sign Up For NewLetters</h4>
+		<p>Get E-Mail updates about our latest shop and <span>Special offers</span></p>
+	</div>
+	<div class="form">
+		<input type="text" placeholder="Your email adress"name="">
+		<button class="normal">Sign up</button>
+	</div>
+</section>
+
+<footer class="section-p1">
+	<div class="col">
+		<a href="#" class="logo">Shopee</a>
+		<h4>Contact</h4>
+		<p><strong>Adress:</strong> Saâada, Rue Zerktouni, Meknès</p>
+		<div class="socialmedia">
+			<h4>Follow Us</h4>
+			<div class="icons">
+<a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+<a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+<a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+<a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<h4>About</h4>
+		<a href="">About Us</a>
+		<a href="">Delivery Information</a>
+		<a href="">Privacy Policy</a>
+		<a href="">Terms and Conditions</a>
+		<a href="">Contact Us</a>
+	</div>
+	<div class="col">
+		<h4>My account</h4>
+		<a href="">Sign up</a>
+		<a href="">View Cart</a>
+		<a href="">My Wishlist</a>
+		<a href="">Track my Order</a>
+		<a href="">Help</a>
+	</div>
+	<div class="col install">
+		<h4>Instal Shoppe App</h4>
+		<p>From App Store or Google Play</p>
+	<div class="row">
+		<img src="app-store.png" alt="">
+		<img src="Google_Play_Store.jpg" alt="">
+	</div>
+	<p>From App Store or Google Play</p>
+	<img src="payment_2x.png" alt="">
+	</div>
+
+	<div class="copyright">
+		<p>“Copyright.” Shpeer.com, file:///C:/Users/Dahmouni/Documents/E-Commerce%20Web%20Site/E-Commerce%20Web%20Site.html. Accessed 8 Aug. 2022.</p>
+	</div>
+</footer>
+</br>
+</br>
+</br>
+</br>
+</br>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+	const bar = document.getElementById('bar');
+	const close = document.getElementById('close');
+	const nav = document.getElementById('navbar');
+
+if (bar) {
+	bar.addEventListener('click', () => {
+       nav.classList.add('active');
+	})
+}
+if (close) {
+	close.addEventListener('click', () => {
+       nav.classList.remove('active');
+	})
+}
+</script>
+</body>
+</html>
